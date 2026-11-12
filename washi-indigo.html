@@ -43,10 +43,8 @@ section{position:relative;padding:60px 26px}
 @keyframes breathe{from{transform:scale(1)}to{transform:scale(1.04)}}
 .cover-shade{position:absolute;inset:0;background:radial-gradient(92% 64% at 50% 44%,rgba(253,250,242,.88),rgba(253,250,242,.45) 62%,rgba(253,250,242,.1));z-index:1}
 .cover-shade2{position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(253,250,242,.4) 78%,rgba(253,250,242,.68));z-index:1}
-.sway-t{transform-origin:50% 100%;animation:growUp 1.15s cubic-bezier(.22,.8,.3,1) .55s both,swayT 6.6s cubic-bezier(.37,.02,.63,.98) 1.7s infinite alternate}
-@keyframes growUp{from{transform:scale(0)}to{transform:scale(1)}}
+.sway-t{transform-origin:50% 100%;animation:swayT 6.6s cubic-bezier(.37,.02,.63,.98) infinite alternate}
 @keyframes swayT{from{transform:rotate(-1.1deg)}to{transform:rotate(1.1deg)}}
-@media (prefers-reduced-motion: reduce){.sway-t{animation:none !important}}
 .cover-ui{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 34px 28px}
 .plat-wrap{position:relative;width:104px;margin-top:4px;animation:fadeUp 1s .2s ease both}
 .plat-wrap img{width:100%}
@@ -165,7 +163,7 @@ body.opened #btnMusic{display:flex}
     <div class="cover-shade" aria-hidden="true"></div>
     <div class="cover-shade2" aria-hidden="true"></div>
     <img class="sway-t" src="assets/undangya/washi-indigo/bot-bambu.webp" alt="" style="position:absolute;left:-6px;bottom:-8px;width:64px;z-index:3" aria-hidden="true">
-    <img class="sway-t" src="assets/undangya/washi-indigo/bot-bambu.webp" alt="" style="position:absolute;right:-6px;bottom:-6px;width:64px;z-index:3;animation-duration:1.15s,7.2s;animation-delay:.8s,1.95s;transform:scaleX(-1)" aria-hidden="true">
+    <img class="sway-t" src="assets/undangya/washi-indigo/bot-bambu.webp" alt="" style="position:absolute;right:-6px;bottom:-6px;width:64px;z-index:3;animation-duration:7.2s;animation-delay:-2.5s;transform:scaleX(-1)" aria-hidden="true">
     <div class="cover-ui">
       <div class="plat-wrap"><img src="assets/undangya/washi-indigo/orn-enso.webp" alt="Lingkaran enso indigo sapuan kuas"><span>M · F</span></div>
       <div class="cover-kicker">THE WEDDING OF</div>
